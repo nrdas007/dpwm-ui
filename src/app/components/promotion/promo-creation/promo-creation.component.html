@@ -1,0 +1,169 @@
+<!-- <p-accordion >
+    <p-accordionTab header="Summary" [selected]="true">
+        <p-card [style]="{'margin-bottom': '2em'}" styleClass="promo-creation-card">
+    
+            <div class="card">
+        <ng-template pTemplate="content">
+            <div class="p-field">
+                <label for="name">Promotion Name</label>
+                <input type="text" pInputText id="name" [(ngModel)]="promotion.name" required autofocus />
+                <small class="p-invalid" *ngIf="submitted && !promotion.name">Promotion event Name is required.</small>
+            </div>
+            <div class="p-field">
+                <label for="description">Description</label>
+                <textarea id="description" pInputTextarea [(ngModel)]="promotion.description" required rows="2" cols="40" required autofocus></textarea>
+                <small class="p-invalid" *ngIf="submitted && !promotion.description">Description is required.</small>
+            </div>
+            <div class="p-field">
+                <label>Type</label>
+                <p-dropdown [(ngModel)]="promotion.type" inputId="promotionType" [options]="types" placeholder="Select">
+                </p-dropdown>
+                <small class="p-invalid" *ngIf="submitted && !promotion.type">Type is required.</small>
+            </div>
+            <div class="p-field">
+                <label>Promotion Event</label>
+                <p-dropdown [(ngModel)]="promotion.promoEvent" inputId="eventName" [options]="eventNames" placeholder="Select">
+                </p-dropdown>
+            </div>
+            <div class="p-field">
+                <label >Start Date</label>
+                <p-calendar  [showIcon]="true" inputId="icon1" [(ngModel)]="promotion.sdate" appendTo="body"></p-calendar>
+                <small class="p-invalid" *ngIf="submitted && !promotion.sdate">Start date is required.</small>
+            </div>
+            <div class="p-field">
+                <label >End Date</label>
+                <p-calendar [showIcon]="true" inputId="icon2" [(ngModel)]="promotion.edate" appendTo="body"></p-calendar>
+                <small class="p-invalid" *ngIf="submitted && !promotion.edate">End date is required.</small>
+            </div>
+            <div class="p-field">
+                
+                    <label class="p-mb-3">Store</label>
+                    <div class="p-formgrid p-grid">
+                    <div class="p-field-radiobutton p-col-6 fourth-row">
+                        <p-radioButton id="storeType1" name="store" value="Single Store" [(ngModel)]="selectedStoreType"></p-radioButton>
+                        <label for="storeType1">Single Store</label>
+                    </div>
+                    <div class="p-field-radiobutton p-col-6 fourth-row">
+                        <p-radioButton id="storeType2" name="store" value="All Store" [(ngModel)]="selectedStoreType"></p-radioButton>
+                        <label for="storeType2">All Store</label>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+    </p-card>
+    </p-accordionTab>
+    <p-accordionTab header="Merchandise Selection">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+    </p-accordionTab>
+    <p-accordionTab header="Supplier Selection">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+    </p-accordionTab>
+    <p-accordionTab header="PromoSelection">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+    </p-accordionTab>
+    <p-accordionTab header="LocationSelection">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+    </p-accordionTab>
+    <p-accordionTab header="Workflow">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+    </p-accordionTab>
+</p-accordion> -->
+
+<!-- <div class="tab">
+    <button class="tablinks" (click)="openTab(event, 'tab1')" id="defaultOpen">Summary</button>
+    <button class="tablinks" (click)="openTab(event, 'tab2')">Paris</button>
+    <button class="tablinks" (click)="openTab(event, 'tab3')">Tokyo</button>
+  </div>
+  
+  <div id="Summary" class="tabcontent">
+    <h3>Summary</h3>
+     -->
+  <!-- </div> -->
+
+  <!-- <p-tabView>
+    <p-tabPanel header="Summary">
+        <p-card [style]="{'margin-bottom': '2em'}" styleClass="promo-creation-card">
+    
+            <div class="card">
+        <ng-template pTemplate="content">
+            <div class="p-field">
+                <label for="name">Promotion Name</label>
+                <input type="text" pInputText id="name" [(ngModel)]="promotion.name" required autofocus />
+                <small class="p-invalid" *ngIf="submitted && !promotion.name">Promotion event Name is required.</small>
+            </div>
+            <div class="p-field">
+                <label for="description">Description</label>
+                <textarea id="description" pInputTextarea [(ngModel)]="promotion.description" required rows="2" cols="40" required autofocus></textarea>
+                <small class="p-invalid" *ngIf="submitted && !promotion.description">Description is required.</small>
+            </div>
+            <div class="p-field">
+                <label>Type</label>
+                <p-dropdown [(ngModel)]="promotion.type" inputId="promotionType" [options]="types" placeholder="Select">
+                </p-dropdown>
+                <small class="p-invalid" *ngIf="submitted && !promotion.type">Type is required.</small>
+            </div>
+            <div class="p-field">
+                <label>Promotion Event</label>
+                <p-dropdown [(ngModel)]="promotion.promoEvent" inputId="eventName" [options]="eventNames" placeholder="Select">
+                </p-dropdown>
+            </div>
+            <div class="p-field">
+                <label>Status</label>
+                <p-dropdown [(ngModel)]="promotion.status" inputId="eventName" [options]="statusValues" placeholder="Select">
+                </p-dropdown>
+            </div>
+            <div class="p-field">
+                <label >Start Date</label>
+                <p-calendar  [showIcon]="true" inputId="icon1" appendTo="body"></p-calendar>
+                <small class="p-invalid" *ngIf="submitted && !promotion.sdate">Start date is required.</small>
+            </div>
+            <div class="p-field">
+                <label >End Date</label>
+                <p-calendar [showIcon]="true" inputId="icon2" appendTo="body"></p-calendar>
+                <small class="p-invalid" *ngIf="submitted && !promotion.edate">End date is required.</small>
+            </div>
+            <div class="p-field">
+                
+                    <label class="p-mb-3">Store</label>
+                    <div class="p-formgrid p-grid">
+                    <div class="p-field-radiobutton p-col-6 fourth-row">
+                        <p-radioButton id="storeType1" name="store" value="Single Store" [(ngModel)]="selectedStoreType"></p-radioButton>
+                        <label for="storeType1">Single Store</label>
+                    </div>
+                    <div class="p-field-radiobutton p-col-6 fourth-row">
+                        <p-radioButton id="storeType2" name="store" value="All Store" [(ngModel)]="selectedStoreType"></p-radioButton>
+                        <label for="storeType2">All Store</label>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+    </p-card>
+    </p-tabPanel>
+    <p-tabPanel header="Promotion Selection">
+
+    </p-tabPanel>
+    <p-tabPanel header="Location Selection">
+
+    </p-tabPanel>
+    <p-tabPanel header="Location Selection">
+
+    </p-tabPanel>
+    <p-tabPanel header="Workflow">
+
+    </p-tabPanel>
+</p-tabView> -->
+
+<p-steps [model]="items" [(activeIndex)]="activeIndex" ></p-steps>
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<header>
+    <div class="hamburger-wrapper" *ngIf="showHeaderButtons">
+        <a class="hamburger" title="Menu" style="cursor: pointer;" (click)="visibleSidebar = true"><i class="pi pi-bars"></i></a>
+    </div>
+    <div class="mns-profile-wrapper">
+        <a class="profile" >
+          <i class="fa fa-user-circle fa-icon-style"></i>
+            <span>{{username}}</span>
+        </a>
+      </div>
+
+      
+</header>
+<p-sidebar [(visible)]="visibleSidebar" [baseZIndex]="10000" styleClass="dpwn-sidebar">
+    <section id="dpwm-slide-menu">
+    <nav class="menu slide-menu-left">
+        <ul style="padding: 15px 0px;">
+          <li class="submenu">
+            <ul class="list">
+              <li (click)="visibleSidebar = false" routerLink="/promoevent">Promotion Events</li>
+              <li (click)="visibleSidebar = false" routerLink="/promotionMaintenance">Promotion Maintenance</li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+</section>
+</p-sidebar>

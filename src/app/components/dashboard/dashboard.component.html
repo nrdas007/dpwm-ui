@@ -1,0 +1,22 @@
+<section class="dashboard" id="dashboard">
+
+    <div class="link" *ngFor="let module of appUrls" [ngSwitch]="module.menuName">
+  
+      <a *ngSwitchCase="'Promo Event'" routerLink="{{module.urlPath}}" title="{{module.displayName}}">
+        <span>
+          <i class="pi pi-check-square"></i>
+        </span>
+        Promo Event
+      </a>
+  
+      <a *ngSwitchCase="'Promotion Maintenance'" routerLink="{{module.urlPath}}" title="{{module.displayName}}">
+        <span>
+          <i class="pi pi-tags"></i>
+        </span>
+        Promotion
+      </a>
+  
+    </div>
+  
+  
+  </section>

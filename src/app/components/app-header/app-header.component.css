@@ -1,0 +1,23 @@
+header {
+    height: 49px;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+  }
+
+  header .hamburger-wrapper {
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    padding: 8px;
+    height: 34px;
+  }
+  .mns-profile-wrapper {
+    clear: both;
+    display: inline-block;
+    float: right;
+    padding: 15px 5px;
+  }
+  .hamburger-wrapper .pi {
+    font-size: 2rem;
+  }

@@ -1,0 +1,33 @@
+.promo-creation-card {
+    margin: auto;
+    width: 50%;
+}
+ .fourth-row {
+    display: inline-block;
+} 
+.promo-creation-card label {
+    margin: 5px;
+}
+.p-field {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .p-field > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .p-field > input {
+    flex: 2;
+  }
+  .ui-steps .ui-steps-item {
+    width: 25%;
+}
+.p-steps .p-highlight .p-steps-number {
+  background: #62FC03 !important;
+  color: #9D03FC !important;
+}
+.p-steps .p-highlight .p-steps-title {
+  color: #9D03FC !important;
+}
+  

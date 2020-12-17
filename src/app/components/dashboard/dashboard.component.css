@@ -1,0 +1,58 @@
+.dashboard {
+    text-align: center;
+    margin: 15.5% 0 0 0;
+  }
+  .dashboard div {
+    background: #fff;
+    margin: 0 25px 0 0;
+    border: 1px solid #ccc;
+    height: 125px;
+    width: 125px;
+    display: inline-block;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+  }
+  .dashboard div:last-child {
+    margin-right: 0;
+  }
+  .dashboard div:hover {
+    -webkit-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.75);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+  }
+  .dashboard div a {
+    width: 100%;
+    height: 67px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 30px 0;
+    font-family: mns-london, Helvetica, Arial, sans-serif;
+  }
+  .dashboard div a span{
+    display: inherit;
+    font-size: 25px;
+    color: rgb(134, 133, 133);
+    padding: 0 0 5px 0;
+  }

@@ -1,0 +1,10 @@
+.promo-card {
+    margin: auto;
+    width: 100%;
+}
+/* .p-fluid label {
+    padding: 5px;
+} */
+.p-field-radiobutton {
+    display: inline-block;
+}

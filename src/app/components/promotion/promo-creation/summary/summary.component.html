@@ -1,0 +1,60 @@
+<p-card [style]="{'margin-bottom': '2em'}" styleClass="promo-creation-card">
+    
+    <div class="card">
+        <ng-template pTemplate="title">
+            Primary Details
+        </ng-template>
+<ng-template pTemplate="content">
+    <div class="p-field">
+        <label for="name">Promotion Name</label>
+        <input type="text" pInputText id="name" [(ngModel)]="promotionInformation.name" required autofocus />
+        <small class="p-invalid" *ngIf="submitted && !promotionInformation.name">Promotion event Name is required.</small>
+    </div>
+    <div class="p-field">
+        <label for="description">Description</label>
+        <textarea id="description" pInputTextarea [(ngModel)]="promotionInformation.description" required rows="2" cols="40" required autofocus></textarea>
+        <small class="p-invalid" *ngIf="submitted && !promotionInformation.description">DescripromoEventption is required.</small>
+    </div>
+    <div class="p-field">
+        <label>Promotion Event</label>
+        <p-dropdown [(ngModel)]="promotionInformation.promoEvent" inputId="eventName" (onChange)="onEventChange()" [options]="eventNames" placeholder="Select">
+        </p-dropdown>
+    </div>
+    <div class="p-field">
+        <label>Status</label>
+        <p-dropdown [(ngModel)]="promotionInformation.status" inputId="eventName" [options]="statusValues" placeholder="Select">
+        </p-dropdown>
+    </div>
+    <div class="p-field">
+        <label >Start Date</label>
+        <p-calendar  [showIcon]="true" inputId="icon1" appendTo="body" dateFormat="dd/mm/yy" [(ngModel)]="promotionInformation.sdate" (onShow)="onShowStartCal()" [minDate]="minDate" [maxDate]="maxDate"></p-calendar>
+        <small class="p-invalid" *ngIf="submitted && !promotionInformation.sdate">Start date is required.</small>
+    </div>
+    <div class="p-field">
+        <label >End Date</label>
+        <p-calendar [showIcon]="true" inputId="icon2" appendTo="body" dateFormat="dd/mm/yy" [(ngModel)]="promotionInformation.edate" (onShow)="onShowEndCal()" [minDate]="minDate" [maxDate]="maxDate"></p-calendar>
+        <small class="p-invalid" *ngIf="submitted && !promotionInformation.edate">End date is required.</small>
+    </div>
+    <div class="p-field">
+        
+            <label class="p-mb-3">Store</label>
+            <div class="p-formgrid p-grid">
+            <div class="p-field-radiobutton p-col-6 fourth-row">
+                <p-radioButton id="storeType1" name="store" value="Single Store" [(ngModel)]="promotionInformation.store"></p-radioButton>
+                <label for="storeType1">Single Store</label>
+            </div>
+            <div class="p-field-radiobutton p-col-6 fourth-row">
+                <p-radioButton id="storeType2" name="store" value="All Store" [(ngModel)]="promotionInformation.store"></p-radioButton>
+                <label for="storeType2">All Store</label>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template pTemplate="footer">
+    <div class="p-grid p-nogutter p-justify-between">
+        <!-- <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button> -->
+        <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right" styleClass="p-button-success"></p-button>
+    </div>
+</ng-template>
+</div>
+</p-card>

@@ -1,0 +1,18 @@
+<div class="stepsdemo-content">
+    <p-card>
+        <ng-template pTemplate="title">
+            Product Vendor Selection
+        </ng-template>
+        <ng-template pTemplate="content">
+            <div>Selected level: {{productVendorInfo.selectedHierarchy.label}}</div>
+            <p-tree id="tree-selection" [value]="hierarchy" selectionMode="single" [(selection)]="selectedNode" (onNodeSelect)="nodeSelect($event)"  layout="horizontal"></p-tree>
+        </ng-template>
+        <small class="p-invalid" *ngIf="!valid">Selection is required.</small>
+        <ng-template pTemplate="footer">
+            <div class="p-grid p-nogutter p-justify-between">
+                <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+                <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right" styleClass="p-button-success"></p-button>
+            </div>
+        </ng-template>
+    </p-card>
+</div>

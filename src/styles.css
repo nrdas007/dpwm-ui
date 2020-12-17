@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("./../node_modules/font-awesome/fonts/fontawesome-webfont.eot");
+           src : url("./../node_modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("./../node_modules/font-awesome/fonts/fontawesome-webfont.woff2") format("woff2"),
+                 url("./../node_modules/font-awesome/fonts/fontawesome-webfont.woff") format("woff"),
+                 url("./../node_modules/font-awesome/fonts/fontawesome-webfont.ttf") format("truetype"),
+                 url("./../node_modules/font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+    }
+
+    div.spinner {
+        background: rgba(255, 255, 255, .25);
+      }
+      div.spinner img {
+        width:100px;
+        height:100px;
+        left:47%;
+        top:40%;
+        background: transparent;
+       }
+
+       .dpwn-sidebar{
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        font-family: mns-london, Helvetica, Arial, sans-serif;
+        position: fixed;
+        padding: 0px;
+        top: 50px;
+      }
+      .p-sidebar-mask.p-component-overlay {
+        background: transparent !important;
+    }
+    .p-sidebar-close {
+        z-index: 12000 !important;
+    }
+    .p-sidebar-left {
+        width: 240px !important;;
+    }
+      #dpwm-slide-menu {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: 80px;
+        width: 240px;
+        z-index: 9999;
+        -webkit-box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+      }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ CSS styles go here */
+        #dpwm-slide-menu{
+          top:50px;
+        }
+      }
+      #dpwm-slide-menu ul li {
+        border-bottom: 1px solid #ccc;
+        list-style: none;
+        outline: none;
+      }
+      #dpwm-slide-menu ul li span {
+        display: block;
+        font-size: 14px;
+        padding: 9px 0;
+        cursor:pointer;
+      }
+      #dpwm-slide-menu ul li span i {
+        font-size: 15px;
+        margin: 0 10px;
+      }
+      #dpwm-slide-menu ul li div{
+        background: #fafafa;
+        border-top: 1px solid #ccc;
+      }
+      
+      /*Hamburger Submenu */
+      #dpwm-slide-menu .submenu ul li{
+        border-bottom:1px solid #ccc;
+        cursor:pointer;
+        padding: 7px 10px;
+      }
+      #dpwm-slide-menu .submenu ul li:last-child{
+        border-bottom:none;
+      }
+      #dpwm-slide-menu .list {
+        padding: 0px;
+      }
+      
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,74 @@
+<p-card header="Promotions" [style]="{'margin-bottom': '2em'}" styleClass="promo-card">
+    
+    <div class="card">
+        <p-toolbar styleClass="p-mb-4">
+            <ng-template pTemplate="left">
+                <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success p-mr-2" (click)="openNew()"></button>
+                <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedEvents()" [disabled]="!selectedEvents || !selectedEvents.length"></button>
+            </ng-template>
+        </p-toolbar>
+    
+        <p-table #dt [value]="promotions" [rows]="10" [paginator]="true" 
+            [(selection)]="selectedPromotions" [rowHover]="true" dataKey="id"
+            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [showCurrentPageReport]="true"><!--[globalFilterFields]="['name','country.name','representative.name','status']"-->
+            <ng-template pTemplate="caption">
+                <div class="p-d-flex p-ai-center p-jc-between">
+                    <h5 class="p-m-0">Manage Promotions</h5>
+                    <span class="p-input-icon-left">
+                        <i class="pi pi-search"></i>
+                        <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Search..." />
+                    </span>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th style="width: 3rem">
+                        <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                    </th>
+                    <th pSortableColumn="id">Id<p-sortIcon field="id"></p-sortIcon></th>
+                    <th pSortableColumn="name">Promotion Name <p-sortIcon field="name"></p-sortIcon></th>
+                    <th pSortableColumn="desc">Description <p-sortIcon field="desc"></p-sortIcon></th>
+                    <th pSortableColumn="pevent">Promotion Event <p-sortIcon field="pevent"></p-sortIcon></th>
+                    <th pSortableColumn="status">Status <p-sortIcon field="status"></p-sortIcon></th>
+                    <th pSortableColumn="sdate">Start Date </th>
+                    <th pSortableColumn="edate">End Date </th>
+                    <th pSortableColumn="store">Store</th>
+                    <th pSortableColumn="promotionVal">Promotion</th>
+                    <th pSortableColumn="approvalStatus">Approval Status</th>
+                    <th></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-promo>
+                <tr>
+                    <td>
+                        <p-tableCheckbox [value]="promo"></p-tableCheckbox>
+                    </td>
+                    <td>{{promo.id}}</td>
+                    <td>{{promo.name}}</td>
+                    <td>{{promo.desc}}</td>
+                    <td>{{promo.pevent}}</td>
+                    <td>{{promo.status}}</td>
+                    <td>{{promo.sdate | dateFormater}}</td>
+                    <td>{{promo.edate | dateFormater}}</td>
+                    <td>{{promo.store}}</td>
+                    <td>{{promo.promotionVal}}</td>
+                    <td>{{promo.approvalStatus}}</td>
+                    
+                    
+                    <td>
+                        <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success p-mr-2" (click)="editEvent(promo)"></button>
+                        <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning" (click)="deleteEvent(promo)"></button>
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="summary">
+                <div class="p-d-flex p-ai-center p-jc-between">
+                    In total there are {{events ? events.length : 0 }} promotions.
+                </div>
+            </ng-template>
+        </p-table>
+    </div>
+    
+    
+    <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>
+    </p-card>

@@ -1,0 +1,10 @@
+.event-card {
+    margin: auto;
+    width: 60%;
+}
+/* .p-fluid label {
+    padding: 5px;
+} */
+.p-field-radiobutton {
+    display: inline-block;
+}

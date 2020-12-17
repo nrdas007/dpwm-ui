@@ -1,0 +1,25 @@
+.promo-creation-card {
+    margin: auto;
+    width: 50%;
+}
+ .fourth-row {
+    display: inline-block;
+} 
+.promo-creation-card label {
+    margin: 5px;
+}
+.p-field {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .p-field > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .p-field > input {
+    flex: 2;
+  }
+  .promo-creation-card .p-button-success {
+    margin-left: 630px;
+  }
